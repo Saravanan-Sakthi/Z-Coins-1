@@ -1,10 +1,10 @@
 package Z_Coin;
 import java.util.Scanner;
-public abstract class Input{
+public abstract class Input {
   static Scanner s= new Scanner(System.in);
   abstract void start();
   Input in;
-  void setin(Input in){
+  void setIn(Input in){
     this.in=in;
   }
   static void type(int option){

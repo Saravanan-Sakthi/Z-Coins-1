@@ -1,6 +1,6 @@
 package Z_Coin;
 import java.util.*;
-public abstract class Transactions{
+public abstract class Transactions {
   static Scanner s= Input.s;
   static ArrayList <Transactions> zctransactions= new ArrayList<>();
   static ArrayList <Transactions> rctransactions= new ArrayList<>();

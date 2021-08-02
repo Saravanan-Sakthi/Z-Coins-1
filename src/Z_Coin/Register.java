@@ -1,6 +1,6 @@
 package Z_Coin;
 import java.util.Scanner;
-public class Register extends Input{
+public class Register extends Input {
   static Scanner s= Input.s;
   void start(){
     System.out.println();

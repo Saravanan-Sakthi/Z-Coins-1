@@ -1,16 +1,16 @@
 package Z_Coin;
 import java.util.Scanner;
-public class Login extends Input{
-  static Scanner s= Input.s;
+public class Login extends Input {
+  static Scanner scan = Input.s;
   void start(){
     System.out.println();
     System.out.println("Enter your Email ID: ");
-    String email= s.nextLine();
-    String pass="";
+    String email= scan.nextLine();
+    String password ="";
     if (UserID.users.containsKey(email)) {
       System.out.println("Enter the password: ");
-      pass=s.nextLine();
-        if(verifypass(email,pass)) user(email);
+      password = scan.nextLine();
+        if(verifypass(email, password)) user(email);
         else System.out.println("Wrong Password");
     }
     else {
@@ -31,8 +31,8 @@ public class Login extends Input{
         System.out.println("1. Account management");
         System.out.println("2. logout");
         System.out.println("Enter the option: ");
-        int n= s.nextInt();
-        s.nextLine();
+        int n= scan.nextInt();
+        scan.nextLine();
         System.out.println();
         UserID u =UserID.users.get(email);
         if (n==1){
